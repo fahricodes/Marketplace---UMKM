@@ -1,9 +1,9 @@
-pconst express = require("express");
+const express = require("express");
 const path = require("path");
 
 const app = express();
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // ===============================
 // FRONTEND
@@ -53,6 +53,6 @@ app.get("/api/products", (req, res) => {
 // SERVER
 // ===============================
 
-app.listen(PORT, () => {
-    console.log(`Server berjalan di http://localhost:${PORT}`);
-}); 
+app.listen(PORT, "0.0.0.0", () => {
+    console.log(`Server berjalan di port ${PORT}`);
+});
