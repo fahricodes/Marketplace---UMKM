@@ -53,6 +53,10 @@ app.get("/api/products", (req, res) => {
 // SERVER
 // ===============================
 
-app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server berjalan di port ${PORT}`);
-});
+if (require.main === module) {
+    app.listen(PORT, () => {
+        console.log(`Server berjalan di http://localhost:${PORT}`);
+    });
+}
+
+module.exports = app;
