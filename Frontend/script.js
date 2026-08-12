@@ -3,6 +3,8 @@ const produk = {
     harga: 15000,
     stok: 20
 };
+const fahri = "giluoi";
+console.log(fahri);
 
 const daftarProduk = document.getElementById("daftar-produk");
 
