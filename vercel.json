@@ -11,10 +11,6 @@
     {
       "source": "/script.js",
       "destination": "/Frontend/script.js"
-    },
-    {
-      "source": "/api/:path*",
-      "destination": "/api"
     }
   ]
 }
