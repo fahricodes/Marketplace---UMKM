@@ -1,16 +1,1 @@
-{
-  "rewrites": [
-    {
-      "source": "/",
-      "destination": "/Frontend/index.html"
-    },
-    {
-      "source": "/style.css",
-      "destination": "/Frontend/style.css"
-    },
-    {
-      "source": "/script.js",
-      "destination": "/Frontend/script.js"
-    }
-  ]
-}
+{}
