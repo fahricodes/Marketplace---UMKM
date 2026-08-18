@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko E-Commerce UMKM</title>
+    <!-- MENGHUBUNGKAN KE FILE STYLES.CSS -->
+    <link rel="stylesheet" href="homescreen.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="barisatas">
+          <button
+            class="buttonkategori"
+            id="buttonkategori"
+            aria-label="Buka menu kategori"
+          >
+            ☰
+          </button>
+          <a href="homescreen.html" class="brand-logo">
+            <img src="#" alt="Nama Toko" />
+          </a>
+        </div>
+        <form id="formpencarian" class="search-form">
+          <input
+            type="text"
+            id="kolompencarian"
+            name="search"
+            placeholder="Cari produk..."
+          />
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+
+      <nav class="nav-user">
+        <ul>
+          <li><a href="homescreen.html">🏠Beranda</a></li>
+          <li>
+            <a href="wishlist.html" id="wishlist">❤️ Wishlist (0)</a>
+          </li>
+          <li class="dropdown-account">
+            <a href="akun.html">👤 Akun Saya</a>
+          </li>
+
+          <li>
+            <a href="keranjang.html" id="keranjang">🛒 Keranjang [0]</a>
+            <div id="isikeranjang"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="homescreen.html" class="aktif">
+            <span>🏠</span>
+            <span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html">
+            <span>❤️</span>
+            <span>Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="akun.html">
+            <span>👤</span>
+            <span>Akun</span>
+          </a>
+        </li>
+        <li>
+          <a href="keranjang.html">
+            <span>🛒</span>
+            <span>Keranjang</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <div class="main-wrapper">
+      <aside class="sidebar-nav">
+        <nav class="nav-main">
+          <ul>
+            <li><a href="akun.html">👤 Profil Saya</a></li>
+            <li><a href="pesanan.html"> 🛒 Pesanan Saya</a></li>
+            <li><a href="pengaturan.html"> ⚙️ Pengaturan Profil</a></li>
+          </ul>
+      </aside>
+
+      <main class="content-area">
+        <div class="account-dashboard">
+          <div class="account-header">
+            <h2>Akun Saya</h2>
+            <p>Selamat datang kembali, <strong>[Nama Pengguna]</strong>!</p>
+          </div>
+          <section class="kartu profil">
+            <div class="detail-profil">
+              <h3>Ringkasan Profil</h3>
+              <p><strong>Nama:</strong> [Nama Pengguna]</p>
+              <p><strong>Email:</strong> [Email Pengguna]</p>
+              <p><strong>Alamat:</strong> [Alamat Pengguna]</p>
+              <p><strong>Status Member:</strong> [Status Member]</p>
+          </section>
+          <section class="kartu">
+            <h3>Pesanan Terbaru</h3>
+            <div class="tabel">
+              <table class="tabel-pesanan">
+                <thead>
+                  <tr>
+                    <th>ID Pesanan</th>
+                    <th>Tanggal</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>12345</td>
+                    <td>2026-06-01</td>
+                    <td>Dikirim</td>
+                    <td>Rp 150.000</td>
+                  </tr>
+                  <tr>
+                    <td>12346</td>
+                    <td>2026-05-28</td>
+                    <td>Selesai</td>
+                    <td>Rp 200.000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+          <section class="grid">
+            <div class="kartu">
+              <h3>Alamat Pengiriman</h3>
+              <p><strong>Alamat:</strong> [Alamat Pengguna]</p>
+              <p><strong>Kota:</strong> [Kota Pengguna]</p>
+              <p><strong>Kode Pos:</strong> [Kode Pos Pengguna]</p>
+              <button class="btn-primary">Ubah Alamat</button>
+            </div>
+            <div class="kartu">
+              <h3>Poin & Hadiah</h3>
+              <p>Poin Tersedia:</p>
+              <div class="nilai-highlight">Poin: 250</div>
+              <button class="btn-primary">Tukar Poin</button>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+  <footer>
+      <hr />
+      <p>&copy; No1. Kenzio Soldier.</p>
+    </footer>
+    <script src="script.js"></script>
+</html>

@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko E-Commerce UMKM</title>
+    <!-- MENGHUBUNGKAN KE FILE STYLES.CSS -->
+    <link rel="stylesheet" href="homescreen.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="barisatas">
+          <button
+            class="buttonkategori"
+            id="buttonkategori"
+            aria-label="Buka menu kategori"
+          >
+            ☰
+          </button>
+          <a href="homescreen.html" class="brand-logo">
+            <img src="#" alt="Nama Toko" />
+          </a>
+        </div>
+        <form id="formpencarian" class="search-form">
+          <input
+            type="text"
+            id="kolompencarian"
+            name="search"
+            placeholder="Cari produk..."
+          />
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+
+      <nav class="nav-user">
+        <ul>
+          <li><a href="homescreen.html">🏠Beranda</a></li>
+          <li>
+            <a href="wishlist.html" id="wishlist">❤️ Wishlist (0)</a>
+          </li>
+          <li class="dropdown-account">
+            <a href="akun.html">👤 Akun Saya</a>
+          </li>
+
+          <li>
+            <a href="pesanan.html" id="keranjang">🛒 Keranjang [0]</a>
+            <div id="isikeranjang"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="homescreen.html" class="aktif">
+            <span>🏠</span>
+            <span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html">
+            <span>❤️</span>
+            <span>Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="akun.html">
+            <span>👤</span>
+            <span>Akun</span>
+          </a>
+        </li>
+        <li>
+          <a href="keranjang.html">
+            <span>🛒</span>
+            <span>Keranjang</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-wrapper">
+      <aside class="sidebar-nav">
+        <nav class="nav-main">
+          <ul>
+            <li><a href="akun.html">👤 Profil Saya</a></li>
+            <li><a href="pesanan.html"> 🛒 Pesanan Saya</a></li>
+            <li><a href="pengaturan.html"> ⚙️ Pengaturan Profil</a></li>
+          </ul>
+      </aside>
+
+      <main class="content-area">
+        <div class="dashboard-pesanan">
+          <div class="header-pesanan">
+            <h2>Pesanan Saya</h2>
+            <p>Berikut adalah daftar pesanan Anda.</p>
+          </div>
+          <div class="tab-pesanan">
+            <button class="tab-pesanan">Semua</button>
+            <button class="tab-pesanan">Diproses</button>
+            <button class="tab-pesanan">Dikirim</button>
+            <button class="tab-pesanan">Selesai</button>
+            <button class="tab-pesanan">Dibatalkan</button>
+          </div>
+
+          <article class="kartu-pesanan">
+            <div class="header-kartu-pesanan">
+              <div>
+                <span class="id-pesanan">#123456</span> &bull;
+                <span class="tanggal-pesanan">2026-06-01</span>
+              </div>
+              <span class="badge-dikirim">Dikirim</span>
+            </div>
+          <div class="item-pesanan">
+            <img src="#" alt="Produk 1" />
+            <div class="info-item-pesanan">
+              <h4>Produk 1</h4>
+              <p>Jumlah: 2 x Rp 25.000</p>
+            </div>
+            <div class="harga-item">Rp 50.000</div>
+          </div>
+          <div class="footer-kartu-pesanan">
+            <div class="harga-total">
+              Total Pesanan: <span>Rp 50.000</span>
+            </div>
+            <div class="action-pesanan">
+              <button class="tombol-detail">Detail Pesanan</button>
+              <button class="tombol-primer">Lacak Paket</button>
+            </div>
+          </div>
+        </article>
+        <article class="kartu-pesanan">
+          <div class="header-kartu-pesanan">
+          <div>
+              <span class="id-pesanan">#123457</span> &bull;
+              <span class="tanggal-pesanan">2026-06-02</span>
+            </div>
+            <span class="badge-diproses">Diproses</span>
+          </div>
+          <div class="item-pesanan">
+            <span img="#" alt="Produk 2" />
+            <div class="detail-item">
+              <h4>Produk 2</h4>
+              <p>Jumlah: 1 x Rp 300.000</p>
+            </div>
+            <div class="harga-item">Rp 300.000</div>
+          </div>
+          <div class="footer-kartu-pesanan">
+            <div class="harga-total">
+              Total Pesanan: <span>Rp 50.000</span>
+            </div>
+            <div class="action-pesanan">
+              <button class="tombol-detail">Detail Pesanan</button>
+              <button class="tombol-primer">Hubungi Penjual</button>
+            </div>
+          </div>
+        </article>
+        <article class="kartu-pesanan">
+          <div class="header-kartu-pesanan">
+            <div>
+              <span class="id-pesanan">#123458</span> &bull;
+              <span class="tanggal-pesanan">2026-06-03</span>
+            </div>
+            <span class="badge-selesai">Selesai</span>
+          </div>
+          <div class="item-pesanan">
+            <span img="#" alt="Produk 3" />
+            <div class="detail-item">
+              <h4>Produk 3</h4>
+              <p>Jumlah: 4 x Rp 200.000</p>
+            </div>
+            <div class="harga-item">Rp 200.000</div>
+          </div>
+          <div class="footer-kartu-pesanan">
+            <div class="harga-total">
+              Total Pesanan: <span>Rp 50.000</span>
+            </div>
+            <div class="action-pesanan">
+              <button class="tombol-detail">Beri Ulasan</button>
+              <button class="tombol-primer">Beli lagi</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+  <footer>
+    <hr />
+    <p>&copy No1. Kenzio Solider.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html> 

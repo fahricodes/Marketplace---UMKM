@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko E-Commerce UMKM</title>
+    <!-- MENGHUBUNGKAN KE FILE STYLES.CSS -->
+    <link rel="stylesheet" href="homescreen.css" />
+  </head>
+  <header>
+      <div class="header-top">
+        <div class="barisatas">
+          <button
+            class="buttonkategori"
+            id="buttonkategori"
+            aria-label="Buka menu kategori"
+          >
+            ☰
+          </button>
+          <a href="homescreen.html" class="brand-logo">
+            <img src="#" alt="Nama Toko" />
+          </a>
+        </div>
+        <form id="formpencarian" class="search-form">
+          <input
+            type="text"
+            id="kolompencarian"
+            name="search"
+            placeholder="Cari produk..."
+          />
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+
+      <nav class="nav-user">
+        <ul>
+          <li><a href="homescreen.html">🏠Beranda</a></li>
+          <li>
+            <a href="wishlist.html" id="wishlist">❤️ Wishlist (0)</a>
+          </li>
+          <li class="dropdown-account">
+            <a href="akun.html">👤 Akun Saya</a>
+          </li>
+
+          <li>
+            <a href="keranjang.html" id="keranjang">🛒 Keranjang [0]</a>
+            <div id="isikeranjang"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="homescreen.html" class="aktif">
+            <span>🏠</span>
+            <span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html">
+            <span>❤️</span>
+            <span>Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="akun.html">
+            <span>👤</span>
+            <span>Akun</span>
+          </a>
+        </li>
+        <li>
+          <a href="keranjang.html">
+            <span>🛒</span>
+            <span>Keranjang</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-wrapper">
+      <aside class="sidebar-nav">
+        <nav class="nav-main">
+          <ul>
+            <li><a href="akun.html">👤 Profil Saya</a></li>
+            <li><a href="pesanan.html"> 🛒 Pesanan Saya</a></li>
+            <li><a href="pengaturan.html"> ⚙️ Pengaturan Profil</a></li>
+          </ul>
+      </aside>
+
+      <main class="content-area">
+        <div class="dashboard-pengaturan">
+          <div class="header-pengaturan">
+            <h2>Pengaturan Profil</h2>
+            <p>Perbarui informasi pribadi dan keamanan akun Anda.</p>
+          </div>
+          <section class="kartu">
+            <h3>Informasi Pribadi</h3>
+            <form action="#" method="POST">
+              <div class="upload-avatar">
+                <img src="#" alt="Foto Profil" id="preview-profil" />
+                <label for="upload-foto" class="btn-upload">Pilih Foto Baru</label>
+                <input type="file" id="upload-foto" accept="image/*" />
+              </div>
+              <div class="form-group">
+                <label for="nama-lengkap">Nama Lengkap</label>
+                <input type="text" id="nama-lengkap" value="" required />
+              </div>
+              <div>
+                <label for="email">Alamat Email</label>
+                <input type="email" id="email" value="" required />
+              </div>
+              <div>
+                <label for="nomor-hp">Nomor Telepon</label>
+                <label type="telp" id="nomor-hp" value="" required />
+              </div>
+              <button type="submit" class="btn-profil">Simpan Profil</button>
+            </form>
+          </section>
+          <section class="kartu">
+            <h3>Keamanan & Kata Sandi</h3>
+            <form action="#" method="POST">
+              <div class="form-group">
+                <label for="password-lama">Kata Sandi Saat Ini</label>
+                <input type="password" id="password-lama" placeholder="" required />
+              </div>
+              <div>
+                <label for="password-baru">Kata Sandi Baru</label>
+                <input type="password" id="password-baru" placeholder="" required />
+              </div>
+              <div>
+                <label for="konfirmasi-password">Konfirmasi Kata Sandi Baru</label>
+                <input type="password" id="konfirmasi-password" placeholder="" required />
+              </div>
+              <button type="submit" class="btn-sandi">Ubah Kata Sandi</button>
+            </form>
+          </section>
+          <section class="kartu">
+            <h3>Pengaturan Notifikasi</h3>
+            <form action="#" method="POST">
+              <div class="checkbox-group">
+                <input type="checkbox" id="notif-email" checked />
+                <label for="notif-email">Terima pembaruan status pesanan via Email</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="notif-promo" checked />
+                <label for="notif-promo">Terima pembaruan status pesanan via Email</label>
+              </div>
+              <div class="checkbox-group">
+                <input type="checkbox" id="notif-wa" checked />
+                <label for="notif-wa">Terima pembaruan status pesanan via Email</label>
+              </div>
+              <br />
+              <button type="submit" class="btn-notif">Simpan Notifikasi</button>
+            </form>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <hr />
+      <p>&copy; No1. Kenzio Soldier.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko E-Commerce UMKM</title>
+    <!-- MENGHUBUNGKAN KE FILE STYLES.CSS -->
+    <link rel="stylesheet" href="homescreen.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header-top">
+        <div class="barisatas">
+          <button
+            class="buttonkategori"
+            id="buttonkategori"
+            aria-label="Buka menu kategori"
+          >
+            ☰
+          </button>
+          <a href="homescreen.html" class="brand-logo">
+            <img src="#" alt="Nama Toko" />
+          </a>
+        </div>
+        <form id="formpencarian" class="search-form">
+          <input
+            type="text"
+            id="kolompencarian"
+            name="search"
+            placeholder="Cari produk..."
+          />
+          <button type="submit">Cari</button>
+        </form>
+      </div>
+
+      <nav class="nav-user">
+        <ul>
+          <li><a href="homescreen.html">🏠Beranda</a></li>
+          <li>
+            <a href="wishlist.html" id="wishlist">❤️ Wishlist (0)</a>
+          </li>
+          <li class="dropdown-account">
+            <a href="akun.html">👤 Akun Saya</a>
+          </li>
+
+          <li>
+            <a href="keranjang.html" id="keranjang">🛒 Keranjang [0]</a>
+            <div id="isikeranjang"></div>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <nav class="bottom-nav">
+      <ul>
+        <li>
+          <a href="homescreen.html" class="aktif">
+            <span>🏠</span>
+            <span>Beranda</span>
+          </a>
+        </li>
+        <li>
+          <a href="wishlist.html">
+            <span>❤️</span>
+            <span>Wishlist</span>
+          </a>
+        </li>
+        <li>
+          <a href="akun.html">
+            <span>👤</span>
+            <span>Akun</span>
+          </a>
+        </li>
+        <li>
+          <a href="keranjang.html">
+            <span>🛒</span>
+            <span>Keranjang</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <div class="main-wrapper">
+      <aside class="sidebar-nav">
+        <nav class="nav-main">
+          <ul>
+            <li><a href="#">Terbaru</a></li>
+            <li class="dropdown-category">
+              <a href="#">Kategori</a>
+              <ul class="dropdown-menu">
+                <li><a href="#">Makanan & Minuman</a></li>
+                <li><a href="#">Fashion Lokal</a></li>
+                <li><a href="#">Kerajinan Tangan</a></li>
+                <li><a href="#">Home & Living</a></li>
+                <li><a href="#">Promo Unik</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Paket Hemat</a></li>
+            <li><a href="#">Cerita Kami</a></li>
+          </ul>
+        </nav>
+      </aside>
+    </div>
+    <!--KONTEN UTAMA WISHLIST-->
+    <main class="content-area">
+      <section id="halaman-keranjang">
+        <div class="header-keranjang">
+          <h2>Keranjang Saya</h2>
+          <p>Daftar produk yang telah Anda tambahkan ke keranjang.</p>
+        </div>
+        <div id="daftar-keranjang">
+          <div>
+            <h3>Produk 1</h3>
+            <p>Harga: Rp <span id="harga-produk">25.000</span></p>
+            <p>Jumlah: <input type="number" id="jumlah-produk" value="1" min="1" /></p>
+          </div>
+        </div>
+        <hr />
+        <div id="ringkasan-biaya">
+          <p>Subtotal Produk : Rp <span id="subtotal">25.000</span></p>
+          <p>Biaya Layanan : Rp <span id="biaya-layanan">2.000</span></p>
+          <p>Biaya Pengiriman : Rp <span id="biaya-pengiriman">10.000</span></p>
+          <h3>Total Keseluruhan: Rp <span id="grand-total">37.000</span></h3>
+          <br />
+          <a href="checkout.html">
+            <button type="button" id="btn-checkout">Checkout</button>
+          </a>
+        </section>
+      </main>
+
+      <footer>
+      <hr />
+      <p>&copy; No1. Kenzio Soldier.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
